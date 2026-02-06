@@ -39,3 +39,77 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# ========================================
+# PHASE 2 - SHOWING ONLY 20% OF PROJECT
+# ========================================
+
+# Hide internal guides/documentation
+/Guide/
+
+# Hide most app pages - keeping only basic structure
+/app/admin/batches/
+/app/admin/departments/[id]/
+/app/admin/departments/new/
+/app/admin/reports/
+/app/admin/rooms/
+/app/admin/settings/
+/app/admin/subjects/
+/app/admin/time-slots/
+/app/admin/timetables/
+/app/admin/users/
+/app/admin/profile/
+
+/app/coordinator/
+/app/faculty/
+/app/hod/
+/app/student/
+/app/dashboard/
+
+# Hide most API routes - keeping only 2-3 essential ones
+/app/api/ai/
+/app/api/batches/
+/app/api/coordinator/
+/app/api/export/
+/app/api/faculty/
+/app/api/hod/
+/app/api/notifications/
+/app/api/reports/
+/app/api/rooms/
+/app/api/seed/
+/app/api/student/
+/app/api/subjects/
+/app/api/time-slots/
+/app/api/timetables/
+/app/api/users/
+
+# Hide most models - keeping only 2-3 core ones
+/models/Batch.ts
+/models/Leave.ts
+/models/Notification.ts
+/models/Room.ts
+/models/Subject.ts
+/models/TimeSlot.ts
+/models/Timetable.ts
+
+# Hide most lib files - keeping only essential auth & db
+/lib/notifications.ts
+/lib/timetable-generator.ts
+/lib/ai/
+
+# Hide most components - keeping only basic UI
+/components/AIChatbot.tsx
+/components/NotificationBell.tsx
+/components/layout/AdminLayout.tsx
+/components/layout/CoordinatorLayout.tsx
+/components/layout/FacultyLayout.tsx
+/components/layout/HODLayout.tsx
+/components/layout/StudentLayout.tsx
+
+# Hide advanced UI components
+/components/ui/Badge.tsx
+/components/ui/Loading.tsx
+/components/ui/Modal.tsx
+/components/ui/Select.tsx
+/components/ui/StatCard.tsx
+/components/ui/Table.tsx
